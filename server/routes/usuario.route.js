@@ -20,8 +20,7 @@ app.get('/usuario',(req,res)=>{
     });
 });
 
-// app.post('/usuario',[validarToken,validarAdministrador],(req,res)=>{
-app.post('/usuario',(req,res)=>{
+app.post('/usuario',[validarToken,validarAdministrador],(req,res)=>{
     let body = req.body;
     let registrante = req.usuario;
 
